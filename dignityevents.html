@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- head remains unchanged -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Event | Professional Event Management Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            background-color: #f9f9f9;
+            border-left: 4px solid #6366F1;
+        }
+        .team-member:hover .social-links {
+            opacity: 1;
+        }
+        .gallery-item {
+            overflow: hidden;
+        }
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .contact-section {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+        }
+        .custom-shape-divider {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .custom-shape-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 70px;
+        }
+        .custom-shape-divider .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center">
+    <div class="flex items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Dignity Event</h1>
+    </div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+      <a href="#services" class="text-gray-600 hover:text-indigo-600 transition">Services</a>
+      <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 transition">Portfolio</a>
+      <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
+    </div>
+    <div class="md:hidden">
+      <button class="text-gray-500 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section remains unchanged -->
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-32 px-6 md:px-12 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Extraordinary Events, Exceptional Experiences</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Elevate your special occasions with our premium event management services</p>
+        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Get Started</a>
+    </section>
+
+
+  <!-- About Section with additional owner photo and message -->
+  <section id="about" class="py-20 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Dignity Event</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto mb-8"></div>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">We are a premier event management company dedicated to creating memorable experiences for our clients. With our attention to detail and creative approach, we transform ordinary events into extraordinary celebrations.</p>
+      </div>
+      <div class="text-center mb-12">
+        <img src="https://via.placeholder.com/200" alt="Mr. Anil Dubey" class="mx-auto rounded-full mb-4">
+        <h3 class="text-2xl font-bold text-indigo-600">MR. ANIL DUBEY</h3>
+        <p class="text-gray-700 max-w-2xl mx-auto mt-4">I am Anil Dubey, the owner of Dignity Event Management, based in Mumbai. My team and I have been working since 2017 & have covered more than 2000+ successful events. We are your one-stop solution for all your wedding plans. We organize wedding ceremonies with creativity, attention to detail and focus on what our client desires. We are one of the best and economical event planners with a team of experienced professionals who will make your celebrations perfect, on time and within budget.</p>
+      </div>
+      <!-- existing about cards remain unchanged -->
+    </div>
+  </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We offer comprehensive event management services tailored to your specific needs and vision.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wedding -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-ring text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Wedding</h3>
+                    <p class="text-gray-600 mb-4">Create your dream wedding with our comprehensive planning and coordination services. From intimate gatherings to grand celebrations, we handle all aspects of your special day.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> End-to-end wedding planning</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Venue selection and coordination</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Customized decor and themes</li>
+                    </ul>
+                </div>
+
+                <!-- Destination Wedding -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-plane text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Destination Wedding</h3>
+                    <p class="text-gray-600 mb-4">Turn your wedding into an unforgettable journey at a beautiful destination. We manage all logistics to create a magical experience for you and your guests.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Location scouting and selection</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Travel and accommodation arrangements</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Local vendor coordination</li>
+                    </ul>
+                </div>
+
+                <!-- Viddhi Mandap -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-om text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Viddhi Mandap</h3>
+                    <p class="text-gray-600 mb-4">Elegant and traditional Viddhi Mandap arrangements for auspicious ceremonies. We ensure authenticity and beauty in every ritual setup.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Traditional and modern mandap designs</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Customized floral arrangements</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Cultural elements integration</li>
+                    </ul>
+                </div>
+
+                <!-- Catering -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-utensils text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Catering</h3>
+                    <p class="text-gray-600 mb-4">Exceptional culinary experiences tailored to your preferences. Our catering partners offer diverse cuisines and presentation styles to delight your guests.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Customized menu planning</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Multicuisine options available</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Professional service staff</li>
+                    </ul>
+                </div>
+
+                <!-- DJ -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-music text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">DJ</h3>
+                    <p class="text-gray-600 mb-4">Energize your event with professional DJ services. We provide experienced DJs equipped with state-of-the-art sound systems to keep your guests entertained.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Experienced professional DJs</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Customized playlists</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> High-quality sound equipment</li>
+                    </ul>
+                </div>
+
+                <!-- Photography/Videography -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-camera text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Photography / Videography</h3>
+                    <p class="text-gray-600 mb-4">Capture your precious moments with our professional photography and videography services. We document your event with creativity and attention to detail.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Pre-event photoshoots</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Cinematic video production</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Drone photography options</li>
+                    </ul>
+                </div>
+
+                <!-- Entertainment Shows -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-magic text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tatto Artist / Bubble Show / Magic Show</h3>
+                    <p class="text-gray-600 mb-4">Enhance your event with unique entertainment options. From tattoo artists to magical performances, we offer a variety of shows to delight your guests.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Professional tattoo artists</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Interactive bubble shows</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Captivating magic performances</li>
+                    </ul>
+                </div>
+
+                <!-- Anchor/Mascot/Nailart -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-microphone-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Anchor / Mascot / Nailart</h3>
+                    <p class="text-gray-600 mb-4">Add personality to your event with professional emcees, mascots, and artistic nail services. These special touches create memorable experiences for your guests.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Charismatic event anchors</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Themed mascot characters</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> On-site nail art services</li>
+                    </ul>
+                </div>
+
+                <!-- Theme Decor -->
+                <div class="bg-white rounded-lg shadow-md p-8 service-card transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-paint-brush text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Theme Decor</h3>
+                    <p class="text-gray-600 mb-4">Transform your venue with our stunning themed decorations. Our design team creates immersive environments that match your vision and event concept.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Custom theme development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Elaborate stage and venue setups</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i> Lighting and ambiance design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Portfolio Section remains unchanged -->
+  <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Portfolio</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Browse through some of our most memorable events that showcase our creativity and expertise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Conference" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Annual Tech Summit</h3>
+                        <p class="text-gray-600">A three-day conference featuring keynote speakers, workshops, and networking opportunities for 500+ attendees.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Elegant Wedding" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Luxury Garden Wedding</h3>
+                        <p class="text-gray-600">An elegant outdoor wedding with custom floral arrangements, gourmet catering, and live entertainment.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Product Launch" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Premium Product Launch</h3>
+                        <p class="text-gray-600">An immersive product launch event featuring interactive displays, media coverage, and VIP experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Charity Gala" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Annual Charity Gala</h3>
+                        <p class="text-gray-600">A black-tie fundraising event with silent auction, gourmet dinner, and entertainment that raised over $200,000.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Retreat" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Executive Retreat</h3>
+                        <p class="text-gray-600">A three-day leadership retreat featuring team building activities, strategic planning sessions, and luxury accommodations.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Music Festival" class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-semibold mb-2">Summer Music Festival</h3>
+                        <p class="text-gray-600">A two-day outdoor festival featuring multiple stages, food vendors, and interactive experiences for 5,000+ attendees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Testimonials Section Removed -->
+  <!-- Team Section Removed -->
+  <!-- Contact Section remains unchanged -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 md:px-12 contact-section text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+                <p class="text-lg max-w-3xl mx-auto">Ready to plan your next event? Get in touch with our team to discuss your vision and requirements.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label for="event-type" class="block mb-2 text-sm font-medium">Event Type</label>
+                            <select id="event-type" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                                <option value="" selected>Select event type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="destination-wedding">Destination Wedding</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="social">Social Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" placeholder="Tell us about your event"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Our Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <p>123 Event Avenue, Suite 500<br>New York, NY 10001</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <p>(555) 123-4567</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <p>info@dignityevent.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Monday - Friday:</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Saturday:</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Sunday:</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer remains unchanged -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Dignity Event</h3>
+                    <p class="text-gray-400 mb-4">Creating extraordinary events and exceptional experiences that leave lasting impressions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Wedding</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Destination Wedding</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Catering</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Photography</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Theme Decor</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Event Avenue, Suite 500<br>New York, NY 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@dignityevent.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2025 Dignity Event. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
