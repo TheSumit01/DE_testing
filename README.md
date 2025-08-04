@@ -1,7 +1,7 @@
-# Network Protocol Educational Simulator
+# Network Protocol Educational Tools
 
 ## Overview
-This repository contains a Python script designed for educational purposes to demonstrate how different network protocols (HTTP, HTTPS, and ICMP) work. The script simulates legitimate network requests at a controlled rate with built-in safety features to prevent misuse.
+This repository contains Python scripts designed for educational purposes to demonstrate network protocols and testing concepts. These scripts simulate legitimate network requests at a controlled rate with built-in safety features to prevent misuse.
 
 ## Educational Purpose
 This tool is created strictly for educational purposes to help understand:
@@ -52,8 +52,32 @@ The script provides detailed information about each request, including:
 - Response sizes
 - Summary statistics
 
+# Controlled Load Tester
+
+This repository also includes a controlled load testing script for educational purposes.
+
+## Features
+- Concurrent request simulation using ThreadPoolExecutor
+- Built-in safety measures to prevent misuse
+- Detailed test summary and statistics
+- Educational notes on load testing concepts
+
+## Usage
+```
+python controlled_load_tester.py --url http://localhost:8080 --requests 50 --threads 5
+```
+
+### Parameters
+- `--url`: Target URL (must be a server you own or have permission to test)
+- `--requests`: Number of requests (default: 50, max: 100)
+- `--threads`: Number of concurrent threads (default: 5, max: 10)
+- `--timeout`: Request timeout in seconds (default: 2.0)
+- `--delay`: Delay between thread creation in seconds (default: 0.2, min: 0.1)
+- `--bypass-whitelist`: Bypass the whitelist check (use with caution)
+
 ## Educational Resources
 To learn more about network protocols and ethical network testing, consider these resources:
 - [Mozilla Developer Network (MDN) HTTP documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 - [Wireshark University](https://www.wireshark.org/docs/)
+- [Web Performance Testing](https://web.dev/articles/performance-measuring-tools)
